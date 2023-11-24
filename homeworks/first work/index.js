@@ -3,8 +3,8 @@
 // let $name = "";
 // let secondName = "";
 
-let $name = prompt('Як вас звати');
-console.log(`Привіт ${$name}`);
+let username = prompt('Як вас звати');
+console.log(`Привіт ${username}`);
 
 let age = prompt('вкажіть рік вашого народження');
 const year = 2023;
@@ -14,8 +14,7 @@ let sideofasquare = prompt ('вкажіть сторону квадрату в �
 console.log(`Периметр ${sideofasquare*4} см`);
 
 let radius = prompt ('вкажіть радіус кола у сантиметрах');
-const pi = 3.14;
-console.log(`Площа кола ${pi*(radius*radius)}`);
+console.log(`Площа кола ${Math.PI*(radius*radius)}`);
 
 let distance = prompt ('Вкажіть відстань між містами в кілометрах');
 let time = prompt ('Вкажіть час за який ви хочете доїхати в годинах');
