@@ -66,4 +66,28 @@
 //       console.log ("не паліндром"); // в інших випадках такий текст
 //     }
 
+// let summ = +prompt ("Введіть суму вашої покупки");
+// if (summ >= 200 && summ <= 300) {
+//     let persentege = 3;
+//     let discount = summ - ((summ/100)*persentege);
+//     console.log ("Сума зі знижкою " + discount + " грн");
+//     } else if (summ >= 301 && summ <= 500) {
+//     let persentege = 5;
+//     let discount = summ - ((summ/100)*persentege);
+//     console.log ("Сума зі знижкою " + discount + " грн");
+// } else if (summ >= 501) {
+//     let persentege = 7;
+//     let discount = summ - ((summ/100)*persentege);
+//     console.log ("Сума зі знижкою " + discount + " грн");
+// }
 
+let day = confirm ("Сьогодні Понеділок. Хочеш побачити наступний день?");
+while (day) {
+    let day = confirm ("Сьогодні Вівторок. Хочеш побачити наступний день?");
+ if (!day) break;
+}
+let day2 = confirm ("Сьогодні Вівторок. Хочеш побачити наступний день?");
+while (day2) {
+    let day2 = confirm ("Сьогодні Середа. Хочеш побачити наступний день?");
+ if (!day2) break;
+}
