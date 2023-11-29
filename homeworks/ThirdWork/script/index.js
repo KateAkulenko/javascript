@@ -10,46 +10,60 @@
 // }
 
 // const digit = +prompt ("Enter digit in range from 0 to 9"); // просимо ввести число від 0 до 9 
-// if (digit ===0) { // строга перевірка числа, якщо співпадає
-//   console.log (")"); // то тут виводиться знак на клавіатурі
-// } else if (digit === 1) { // строга перевірка числа, якщо співпадає
-//   console.log ("!"); // то тут виводиться знак на клавіатурі
-// } else if (digit === 2) { // строга перевірка числа, якщо співпадає
-//   console.log ("@"); // то тут виводиться знак на клавіатурі
-// } else if (digit === 3) { // строга перевірка числа, якщо співпадає
-//   console.log ("#"); // то тут виводиться знак на клавіатурі
-// } else if (digit === 4) { // строга перевірка числа, якщо співпадає
-//   console.log ("$"); // то тут виводиться знак на клавіатурі
-// } else if (digit === 5) { // строга перевірка числа, якщо співпадає
-//   console.log ("%"); // то тут виводиться знак на клавіатурі
-// } else if (digit === 6) { // строга перевірка числа, якщо співпадає
-//   console.log ("^"); // то тут виводиться знак на клавіатурі
-// } else if (digit === 7) { // строга перевірка числа, якщо співпадає
-//   console.log ("&"); // то тут виводиться знак на клавіатурі
-// } else if (digit === 8) { // строга перевірка числа, якщо співпадає
-//   console.log ("*"); // то тут виводиться знак на клавіатурі
-// } else if (digit === 9) { // строга перевірка числа, якщо співпадає
-//   console.log ("("); // то тут виводиться знак на клавіатурі
-// } else if (digit >= 10) {
-//   console.log ("You entered not right digit"); //повідомлення якщо число від 10 і більше
+// switch (digit) { 
+//   case 0:
+//     console.log (")"); 
+//     break;
+//   case 1:
+//     console.log ("!");
+//     break;
+//   case 2:
+//     console.log ("@");
+//     break;
+//   case 3:
+//       console.log ("#");
+//       break;
+//   case 4:
+//       console.log ("$");
+//       break;
+//   case 5:
+//     console.log ("%");
+//     break;
+//   case 6:
+//       console.log ("^");
+//       break;
+//   case 7:
+//     console.log ("&");
+//     break;
+//   case 8:
+//     console.log ("*");
+//     break;
+//   case 9:
+//       console.log ("(");
+//       break;
+//   default: 
+//     console.log ("You entered not right digit"); //повідомлення якщо число від 10 і більше
 // }
 
-// let first = +prompt ("Enter first figure");
-// let second = +prompt ("Enter second figure");
-// let result = 0;
-// let i = 0;
-// for (i = first; i < second; i++); {
-//   console.log (i);
-// }
-// console.log (i);
+// let first = +prompt ("Enter first figure"); //перша цифра діапазону
+// let second = +prompt ("Enter second figure"); //остання цифра діапазону
+// let i = +first; //присвоюєм змінній 'і' першу цифру
+// let sum = 0; //задаєм сумі нульове значення
+// do {
+//   i++; //збільшувати першу цифру на 1
+//   console.log ( i ); //вивести послідовніть цифр діапазону
+//   sum += i; //просумувати всі числа діапазрну
+// } while (i < +second); // поки 'і' не досягне останньої цифри діапазону, яку не враховуємо
+// console.log("Сума чисел у послідовності: " +sum);
 
-let first = +prompt ("Enter first figure");
-let second = +prompt ("Enter second figure");
-let i = +first;
-let sum = 0;
-do {
-  console.log ( i );
-  i++;
-} while (i < +second);
+// const numberUser = +prompt ("вкажіть пятизначне число");//число користувача
+// const reverse = (numberUser) => numberUser.toString().split('').reverse().join('');//переводимо число в рядок, перетворюємо на масив строк, міняємо порядок строк, обєднання масива в строку
+// let numberU  = reverse(numberUser); //присвоюємо перевернуте значення
+// console.log(+numberU); // виводимо перевернуте значення
+// if (+numberUser === +numberU) { // строге порівняння
+//       console.log ("паліндром"); // якщо паліндром то виводимо такий текст
+//     } else {
+//       console.log ("не паліндром"); // в інших випадках такий текст
+//     }
 
-console.log (`сума чисел ${sum += i}`);
+
