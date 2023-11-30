@@ -1,6 +1,6 @@
-import { message, symbolOfNumber, sum, gcd, number1, number2, str} from "./min.js";
-import { palindrome, discount } from "./norm.js";
-import { userAnswer, strResult, date } from "./max.js";
+import { message, symbolOfNumber, sum, gcd, number1, number2, str} from "./script/min.js";
+import { palindrome, discount } from "./script/norm.js";
+import { userAnswer, strResult, date } from "./script/max.js";
 
 console.log(message);
 console.log(symbolOfNumber);
