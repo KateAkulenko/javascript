@@ -1,4 +1,5 @@
 function nFactorial(a) {
+  let a = +prompt('Введіть число для обчислення факторіалу');
   if (typeof a === 'number' && !isNaN(a)) {
   } else {
     return console.error('ви ввели не число');
@@ -10,5 +11,5 @@ function nFactorial(a) {
     return a * nFactorial(a - 1);
   }
 }
-let a = Number(prompt('Введіть число для обчислення факторіалу'));
+
 export {nFactorial};

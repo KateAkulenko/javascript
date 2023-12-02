@@ -3,13 +3,14 @@
 // import {countArg} from "./script/countArguments.js";
 // import {oneNubmer} from "./script/threeNumsToOne.js";
 // import {square} from "./script/square.js";
-// import {perfectDigit} from "./script/perfectDigit.js";
+// import {findPerfectDigit, perfectDigit} from "./script/perfectDigit.js";
 
 // console.log(twoDigitsComparison(3, 1));
 // console.log(`Факторіал ${nFactorial(a)}`); 
 // console.log(`Кількість аргументів ${countArg(2, 3, 5, 5, 7)}`); 
 // console.log(`Обєднання трьох чисел в одне ${oneNubmer(1, 3, 6)}`);
 // console.log(square(x, y)); 
+// perfectDigit();
 // console.log (findPerfectDigit(1, 9000));
 
 

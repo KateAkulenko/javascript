@@ -1,37 +1,25 @@
-let isShowNextDay = true;
-let dayCount = 1;
-while (isShowNextDay) {
-	let message = 'Сьогодні Понеділок. Хочеш побачити наступний день?';
-	switch(dayCount) {
-		case 2: {
-			message = 'Сьогодні Вівторок. Хочеш побачити наступний день?';
-			break;
-		}
-		case 3: {
-			message = 'Сьогодні Середа. Хочеш побачити наступний день?';
-			break;
-		}
-		case 4: {
-			message = 'Сьогодні Четвер. Хочеш побачити наступний день?';
-			break;
-		}
-		case 5: {
-			message = 'Сьогодні Пятниця. Хочеш побачити наступний день?';
-			break;
-		}
-		case 6: {
-			message = 'Сьогодні Субота. Хочеш побачити наступний день?';
-			break;
-		}
-		case 7: {
-			message = 'Сьогодні Неділя. Хочеш побачити наступний день?';
-			break;
-		}
-	}
-  isShowNextDay = confirm(message);
-	if (dayCount === 7) {
-		dayCount = 1; 
-	} else {
-		dayCount += 1; 
-	}
-} 
+function perfectDigit(number) {
+  let sum = 0;
+  if (typeof x !== 'number' || isNaN(x)) {
+		'неправильний тип данних'
+  }
+ if (number <= 1) {
+	return 'значення менше нуля';
+  }
+  for (i = 1; i < number; i++) {
+    if (number % i === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+
+
+  function findPerfectDigit(min, max) {
+    for (let i = min; i < max; i++) {
+      if (i === perfectDigit(i)) {
+        console.log(`Ідеальне число ${i}`);
+      }
+    }
+  }
+console.log(findPerfectDigit(1, 9000));
