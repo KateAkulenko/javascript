@@ -6,10 +6,10 @@
 // import {findPerfectDigit, perfectDigit} from "./script/perfectDigit.js";
 
 // console.log(twoDigitsComparison(3, 1));
-// console.log(`Факторіал ${nFactorial(a)}`); 
+// console.log(`Факторіал ${nFactorial(+prompt("введіть число для факторіалу"))}`); 
 // console.log(`Кількість аргументів ${countArg(2, 3, 5, 5, 7)}`); 
 // console.log(`Обєднання трьох чисел в одне ${oneNubmer(1, 3, 6)}`);
-// console.log(square(x, y)); 
+// console.log(square(3, 5)); 
 // perfectDigit();
 // console.log (findPerfectDigit(1, 9000));
 

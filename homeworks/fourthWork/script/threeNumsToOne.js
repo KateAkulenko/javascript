@@ -1,6 +1,6 @@
 function oneNubmer(x, y, z) {
-  numbersToString = '' + x + y + z;
-  result = parseInt(numbersToString);
+  let numbersToString = '' + x + y + z;
+  let result = parseInt(numbersToString);
   return result;
 }
 export {oneNubmer};

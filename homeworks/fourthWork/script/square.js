@@ -1,6 +1,4 @@
 function square(x, y = 0) {
-  let x = Number(prompt('Введіть перше число'));
-  let y = Number(prompt('Введіть друге число'));
   if (typeof x !== 'number' || isNaN(x)) {
     return 'В першому числі неправильний тип данних';
   }
