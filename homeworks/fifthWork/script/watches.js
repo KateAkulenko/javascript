@@ -112,4 +112,4 @@ function hoursChange(time) {
   console.log('Поточний час: ' + sHours + ':' + sMinutes + ':' + sSeconds);
 }
 hoursChange(time);
-export {clock, secondsChange, minutesChange, hoursChange}
+export {clock, secondsChange, minutesChange, hoursChange, time}

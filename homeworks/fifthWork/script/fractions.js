@@ -3,11 +3,11 @@
 
 let fraction1 = {
   numerator: 8, // чисельник
-  denominator: 4, // знаменник
+  denominator: 5, // знаменник
 };
 let fraction2 = {
   numerator: 3, // чисельник
-  denominator: 4, // знаменник
+  denominator: 7, // знаменник
 };
 
 function fractionAdd(fraction1, fraction2) {
