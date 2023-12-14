@@ -1,49 +1,41 @@
 class Marker {
-  constructor(color, inkLevel) {
+  constructor(color, colorLevel) {
     this.color = color;
-    this.inkLevel = inkLevel;
+    this.colorLevel = colorLevel;
   }
 
   write(text) {
-    console.log(this.inkLevel);
+    console.log(`Рівень фарби ${this.color} до роздрукування тексту ${this.colorLevel}`);
     for (const char of text) {
-      if (char !== " " && this.inkLevel > 0) {
-        // console.log(`Запиши ${char} з ${this.color} маркер.`);
-        this.inkLevel -= 0.5;
+      if (char !== " " && this.colorLevel > 0) {
+        this.colorLevel -= 0.5;
       }
     }
-    console.log(this.inkLevel );
+    console.log(`Рівень фарби ${this.color} після роздрукування тексту ${this.colorLevel}`);
   }
 }
 
 class RefillableMarker extends Marker {
-  constructor(color, inkLevel, capasity) {
-    super (color, inkLevel);
+  constructor(color, colorLevel, capasity) {
+    super (color, colorLevel);
     this.capasity = capasity;
   }
 
   refill() {
-    console.log(this.inkLevel );
-    if(this.inkLevel < 100) {
-      const amountToRefill = this.capasity - this.inkLevel;
-      // this.inkLevel += amountToRefill;
-  
-      console.log(`Перезаповніть ${amountToRefill}% фарби. Поточний рівень фарби: ${this.inkLevel}%`);
-      this.inkLevel = this.inkLevel + amountToRefill;
-      console.log(`Вітаємо! Ви заправили маркер. Тепер рівень фарби = ${this.inkLevel}%`);
- 
+    console.log(`Поточний рівень фарби ${this.colorLevel}%`);
+    if(this.colorLevel < 100) {
+      const volumeToRefill = this.capasity - this.colorLevel;
+      console.log(`Необхідно додати ${volumeToRefill}% фарби.`);
+      this.colorLevel += volumeToRefill;
+      console.log(`Вітаємо! Ви заправили маркер. Тепер рівень фарби = ${this.colorLevel}%`);
     } else {
       console.log(`Заповнений`);
     }
   } 
 }
 
-// Приклад використання простого маркера
-const simpleMarker = new Marker('blue', 50);
-simpleMarker.write('Kate learn JS');
+const newMarker = new Marker('yellow', 77);
+newMarker.write('Kate learn JS');
 
-// Приклад використання перезаправлюваного маркера
-const refillableMarker = new RefillableMarker('red', 30, 100);
+const refillableMarker = new RefillableMarker('red', 27, 100);
 refillableMarker.refill();
-
-export default Marker
