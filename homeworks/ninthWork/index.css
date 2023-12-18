@@ -1,0 +1,13 @@
+.txt {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#js-txtar {
+  display: none;
+}
+
+#js-divtxt {
+  display: inline-block;
+}
