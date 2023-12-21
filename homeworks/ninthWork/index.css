@@ -1,13 +1,42 @@
-.txt {
+.txtarea,
+.txtdiv {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 20px;
 }
 
-#js-txtar {
+.txtarea {
   display: none;
 }
 
-#js-divtxt {
+.txtdiv {
   display: inline-block;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.box-content {
+  width: 100%;
+  height: 100%;
+  /* resize: both; */
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.table {
+  width: 100%;
+}
+
+th {
+  padding: 20px;
+  border-bottom: 2px solid black;
 }

@@ -4,22 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
     <title>Події</title>
   </head>
   <body>
     <div class="app">
-      <div class="txt" id="js-divtxt">
+      <div class="txtdiv" id="js-divtxt">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
+        consectetur labore minus alias itaque tempore architecto veritatis,
+        nobis rem veniam excepturi quasi voluptas libero expedita culpa sed
+        deserunt nulla voluptatem? Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Optio consectetur labore minus alias itaque tempore
+        architecto veritatis, nobis rem veniam excepturi quasi voluptas libero
+        expedita culpa sed deserunt nulla voluptatem? Lorem ipsum dolor, sit
+        amet consectetur adipisicing elit. Optio consectetur labore minus alias
+        itaque tempore architecto veritatis, nobis rem veniam excepturi quasi
+        voluptas libero expedita culpa sed deserunt nulla voluptatem?
+      </div>
+      <textarea
+        name="textarea"
+        wrap="hard"
+        id="js-txtar"
+        class="txtarea"
+        cols="140"
+        rows="50"
+      >
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur labore minus alias itaque tempore architecto veritatis,
         nobis rem veniam excepturi quasi voluptas libero expedita culpa sed deserunt nulla voluptatem? Lorem ipsum dolor, sit amet consectetur
         adipisicing elit. Optio consectetur labore minus alias itaque tempore architecto veritatis, nobis rem veniam excepturi quasi voluptas libero
         expedita culpa sed deserunt nulla voluptatem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur labore minus alias
         itaque tempore architecto veritatis, nobis rem veniam excepturi quasi voluptas libero expedita culpa sed deserunt nulla voluptatem?
-      </div>
-      <textarea name="textarea" wrap="hard" id="js-txtar" class="txt" cols="140" rows="50">
-        <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur labore minus alias itaque tempore architecto veritatis, nobis rem veniam excepturi quasi voluptas libero expedita culpa sed deserunt nulla voluptatem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur labore minus alias itaque tempore architecto veritatis, nobis rem veniam excepturi quasi voluptas libero expedita culpa sed deserunt nulla voluptatem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur labore minus alias itaque tempore architecto veritatis, nobis rem veniam excepturi quasi voluptas libero expedita culpa sed deserunt nulla voluptatem? -->
       </textarea>
+      <table class="table" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th id="js-id">ID</th>
+            <th id="js-name">Name</th>
+            <th id="js-total">Total</th>
+          </tr>
+        </thead>
+        <tbody id="js-table" >
+        </tbody>
+      </table>
+      <div class="box" id="js-box">
+        <p class="box-content" id="js-box-content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          nihil perferendis illum ducimus. Dignissimos architecto, perspiciatis
+          voluptas cumque blanditiis pariatur consectetur ratione ea eligendi
+          itaque asperiores distinctio animi magnam aperiam.
+        </p>
+      </div>
     </div>
-    <script type="module" src="./index.js"></script>
+    <script type="module" defer src="./index.js"></script>
   </body>
 </html>
