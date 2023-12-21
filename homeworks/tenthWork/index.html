@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Асинхронний JavaScript та XML</title>
+  </head>
+  <body>
+    <div class="app">
+      <form id="searchForm">
+        <label for="movieTitle">Movie Title:</label>
+        <input type="text" id="movieTitle" name="movieTitle" required>
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+        </select>
+        <button type="button" id="searchFormSubmit">Search</button>
+    </form>
+    
+    <div id="moviesContainer"></div>
+    <div id="pagination"></div>
+    <div id="detailsContainer" class="details"></div>
+    
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+#moviesContainer {
+  margin-top: 20px;
+}
+
+.movie {
+  margin-bottom: 10px;
+}
+
+#pagination {
+  margin-top: 10px;
+}
+/* 
+.details {
+  display: none;
+  margin-top: 10px;
+} */
